@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="es" data-lt-installed="true">
+<head>
+    <!-- Metadatos -->
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Sitio web personal de Edwin. Aprende más sobre mí y mis proyectos.">
+    <meta name="keywords" content="Edwin, desarrollo web, programación, proyectos">
+    <!-- Título de la página -->
+    <title>Mi primera web</title>
+    <!-- Fuentes e iconos -->
+    <script src="https://kit.fontawesome.com/89cf5043c3.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="styles.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto&family=Silkscreen&display=swap" rel="stylesheet">
+    <!-- Scripts -->
+    <script src="script.js" defer></script>
+    <script src="https://kit.fontawesome.com/c9b87a4bee.js" crossorigin="anonymous"></script>
+</head>
+<body>
+    <header id="encabezado">
+        <!-- Encabezado -->
+        <h1 class="logo">
+            <a href="https://lxp.egg.live/registro?referrer=Egg-Edwin-qgqjt" target="_blank" class="fuente-acento">Mi web</a>
+        </h1>
+        <nav>
+            <!-- Menú de navegación -->
+            <input type="checkbox" id="check" />
+            <label for="check" class="checkbtn">
+                <i class="fa-solid fa-bars"></i>
+            </label>
+            <ul class="menu">
+                <li><a href="index.html">Inicio</a></li>
+                <li><a href="#seccion-principal">Acerca de mi</a></li>
+                <li><a href="#trabajos">Trabajos</a></li>
+                <li><a href="#servicios">Servicios</a></li>
+                <li><a href="#contacto">Contacto</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main id="seccion-principal">
+        <!-- Sección principal -->
+        <section class="seccion-1">
+            <div class=" ">
+                <h2>Acerca de mí</h2>
+                <!-- Contenido de "Acerca de mí" -->
+                <p class="parrafo1">¡Bienvenido a mi página! Aquí, aprenderás más sobre mí.</p>
+                <p class="parrafo2">Me llamo Edwin, nací en El Colegio Cundinamaca y vivo en Bogotá. Me gusta la comida mexicana y salir a pasear en días de sol. Me encantaría aprender a programar para poder ayudar a las personas a mostrar lo que hacen.</p>
+            </div>
+            <div class="acerca-imagen">
+                <img src="img/hero-img.jpg" alt="imagen personal">
+            </div>
+        </section>
+
+        <section class="seccion-2">
+            <!-- Segunda sección -->
+            <img src="img/carrusel-img.png" alt="imagen de carrusel">
+        </section>
+    </main>
+
+    <section id="trabajos">
+        <!-- Sección de trabajos -->
+        <div class="tarjeta">
+            <img src="img/imagen1.jpg" alt="Imagen 1">
+            <h3>Título de la tarjeta 1</h3>
+            <p>Texto de descripción de la tarjeta 1. Puedes incluir información adicional aquí.</p>
+            <a href="#">Detalle</a>
+        </div>
+
+        <div class="tarjeta">
+            <img src="img/imagen2.jpg" alt="Imagen 2">
+            <h3>Título de la tarjeta 2</h3>
+            <p>Texto de descripción de la tarjeta 2. Puedes incluir información adicional aquí.</p>
+            <a href="#">Detalle</a>
+        </div>
+    </section>
+
+    <h1>Contacto</h1>
+    <p><em>¡Esperamos tu consulta!</em></p>
+    <form action="procesar.php" method="post" onsubmit="return validarFormulario()">
+        <div>
+            <label for="nombre">Nombre:</label>
+            <input type="text" id="nombre" name="nombre" required>
+            <span id="nombreError" class="error"></span>
+        </div>
+
+        <div>
+            <label for="email">Correo Electrónico:</label>
+            <input type="email" id="email" name="email" required>
+            <span id="emailError" class="error"></span>
+        </div>
+
+        <div>
+            <label for="mensaje">Mensaje:</label>
+            <textarea id="mensaje" name="mensaje" rows="4" required></textarea>
+            <span id="mensajeError" class="error"></span>
+        </div>
+
+        <div>
+            <button type="submit">Enviar</button>
+        </div>
+    </form>
+
+
+
+    <footer id="contacto">
+        <!-- Pie de página -->
+        <div id="footer">
+            <a href="http://wa.me/573212179734" target="_blank">
+                <div class="whatsapp">
+                    <img src="img/WhatsApp.svg.png" alt="imagen whatsapp">
+                </div>
+            </a>
+            <h3>Contacto</h3>
+            <nav>
+                <ul>
+                    <li><a href="#">Linkedin</a></li>
+                    <li><a href="#">Facebook</a></li>
+                    <li><a href="#">Instagram</a></li>
+                    <li><a href="#">X</a></li>
+                    <li><a href="#">TikTok</a></li>
+                </ul>
+            </nav>
+        </div>
+        </div>
+    </footer>
+</body>
+</html>
